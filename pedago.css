@@ -1,0 +1,9 @@
+.adminOnly {
+    display: none !important;
+}
+.skillGPA {
+    display: none !important;
+}
+.warningAdmin {
+    display: none !important;
+}
