@@ -1,281 +1,70 @@
 /*
 https://www.color-name.com/hex/0072bc#color-palettes
-Main color : #0072BC
-Complementary color : #BC4A00
 Analogous colors : #0014BC #00BCA8
 Split-Complementary : #BC0014 #BCA800
 */
 
-/* ==UserStyle==
-@name			gandalf
-@author			Cascadea User
-@version		1.0.0
-@namespace		cascadea3187230757
-@preprocessor	default
-==/UserStyle== */
+/*
+ *   General CSS
+ */
+
+:root {
+    --main-color: #0072BC;
+    --secondary-color: #00BCA8;
+    --complementary-color: #BC4A00;
+    --restricted-color: #e04957;
+}
+
 #page {
     padding-top: 120px;
+    background-image: none !important;
+    background-color: #000000;
 }
-/* ==UserStyle==
-@name			gandalf
-@author			Cascadea User
-@version		1.0.0
-@namespace		cascadea3187230757
-@preprocessor	default
-==/UserStyle== */
-#page {
-    padding-top: 120px;
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    color: #0272bc;
 }
+
+/*
+ * My Competency page CSS
+ */
+
 .skillProgressContainer .skillProgress {
-    background-color: #00BCA8;
+    background-color: var(--secondary-color);
 }
+
+/*
+ * My Competency page Pedago buttons CSS
+ */
+
 .userButton a.btn.btn-info {
-    background-color: #00BCA8;
+    background-color: var(--secondary-color);
     width: 230px;
     padding: 4px 15px;
     height: 28px;
     overflow: hidden;
 }
-.courses .coursebox {
-    background-color: #f0f0f0 !important;
-    padding: 4px;
-    border-radius: 12px;
+
+
+/*
+ * Course CSS
+ */
+
+
+.sectionname {
+    background-color: #0272bc !important;
+    border-radius: 0;
 }
-#page {
-    background-image: none !important;
-    background-color: #000000;
-}
-.breadcrumb ul i, .breadcrumb li.lastli span {
-    color: #0272bc;
-    text-decoration: none;
-}
-::selection {
-    color: #000;
-    background-color: #5cc0de !important;
-}
+
+/* Activity */
+
 div.activity-wrapper {
+    padding-left: 1.5% !important;
     border-left: 1px solid #CCC !important;
     border-radius: 10px;
 }
 .activity img.iconlarge {
     height: 30px;
     width: 30px;
-}
-.ishidden .badge-info {
-    color: #000;
-    background-color: #ffc108;
-    border-bottom: 1px solid #ffc108 !important;
-    border-radius: 10px;
-}
-.isrestricted .badge-info {
-    color: #FFF;
-    background-color: #e04957;
-    border-bottom: 1px solid #e04957 !important;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.isrestricted strong {
-    border-bottom: 1px solid #e04957 !important;
-}
-#adaptable-page-header-wrapper #main-navbar li .action-menu-trigger a:hover {
-    color: #5cc0de;
-}
-#adaptable-page-header-wrapper #main-navbar li a:hover {
-    background-color: #5cc0de;
-    text-decoration: none;
-}
-h1, h2, h3, h4, h5 {
-    text-transform: uppercase;
-    color: #0272bc;
-}
-.nav-link {
-    /* border: 1px solid black;
-	    width: 70px;
-	    overflow: hidden;*/
-    white-space: nowrap;
-}
-.activity-wrapper {
-    padding-left: 1.5% !important;
-}
-.section li.modtype_forum div.activity-wrapper {
-    -webkit-box-shadow: -3px 0 0 0 #980399;
-    padding: 10px;
-    border: 1px solid #980399 !important;
-    border-radius: 10px;
-}
-.section li.modtype_assign div.activity-wrapper {
-    -webkit-box-shadow: -3px 0 0 0 #0272bc;
-    padding: 10px;
-    border: 1px solid #0272bc !important;
-    border-radius: 10px;
-}
-@media(max-width: 979px) {
-    .page-header-margin.header-style1 #page {
-        margin-top: 0;
-    }
-}
-.instancename {
-    border-bottom: 1px solid #acacab !important;
-    margin: 1em;
-    padding: .1em;
-}
-.block {
-    border-top: 1px solid #bbb !important;
-}
-.sectionname {
-    background-color: #0272bc !important;
-    border-radius: 0;
-}
-.section .activity .contentwithoutlink>a, .section .activity .activityinstance>a {
-    text-indent: 0px !important;
-}
-.section .activity .contentwithoutlink .dimmed .activityicon, .section .activity .activityinstance .dimmed .activityicon {
-    opacity: 1 !important;
-}
-.courses .coursebox {
-    background-color: #f0f0f0 !important;
-    padding: 4px;
-    border-radius: 12px;
-}
-#page {
-    background-image: none !important;
-    background-color: #000000;
-}
-.breadcrumb ul i, .breadcrumb li.lastli span {
-    color: #0272bc;
-    text-decoration: none;
-}
-::selection {
-    color: #000;
-    background-color: #5cc0de !important;
-}
-div.activity-wrapper {
-    border-left: 1px solid #CCC !important;
-    border-radius: 10px;
-}
-.activity img.iconlarge {
-    height: 30px;
-    width: 30px;
-}
-.ishidden .badge-info {
-    color: #000;
-    background-color: #ffc108;
-    border-bottom: 1px solid #ffc108 !important;
-    border-radius: 10px;
-}
-.isrestricted .badge-info {
-    color: #FFF;
-    background-color: #e04957;
-    border-bottom: 1px solid #e04957 !important;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.isrestricted strong {
-    border-bottom: 1px solid #e04957 !important;
-}
-#adaptable-page-header-wrapper #main-navbar li .action-menu-trigger a:hover {
-    color: #5cc0de;
-}
-#adaptable-page-header-wrapper #main-navbar li a:hover {
-    background-color: #5cc0de;
-    text-decoration: none;
-}
-h1, h2, h3, h4, h5 {
-    text-transform: uppercase;
-    color: #0272bc;
-}
-.nav-link {
-    /* border: 1px solid black;
-	    width: 70px;
-	    overflow: hidden;*/
-    white-space: nowrap;
-}
-.activity-wrapper {
-    padding-left: 1.5% !important;
-}
-.section li.modtype_forum div.activity-wrapper {
-    -webkit-box-shadow: -3px 0 0 0 #980399;
-    padding: 10px;
-    border: 1px solid #980399 !important;
-    border-radius: 10px;
-}
-.section li.modtype_assign div.activity-wrapper {
-    -webkit-box-shadow: -3px 0 0 0 #0272bc;
-    padding: 10px;
-    border: 1px solid #0272bc !important;
-    border-radius: 10px;
-}
-@media(max-width: 979px) {
-    .page-header-margin.header-style1 #page {
-        margin-top: 0;
-    }
-}
-.block {
-    border-top: 1px solid #bbb !important;
-}
-.sectionname {
-    background-color: #0272bc !important;
-    border-radius: 0;
-}
-.section .activity .contentwithoutlink>a, .section .activity .activityinstance>a {
-    text-indent: 0px !important;
-}
-.section .activity .contentwithoutlink .dimmed .activityicon, .section .activity .activityinstance .dimmed .activityicon {
-    opacity: 1 !important;
-}
-
-/* Boutons */
-
-
-/* gestion des boutons dans les projets */
-.activityinstance > a {
-    align-items: center;
-    background-clip: padding-box;
-    background-color: #00BCA8;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 1rem;
-    padding: 8px 32px 8px 0px;
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    width: auto;
-}
-
-.activityinstance > a:hover,
-.activityinstance > a:focus {
-    background-color: #BC4A00;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.activityinstance > a:hover {
-    transform: translateY(-1px);
-}
-
-.activityinstance > a:active {
-    background-color: #c85000;
-    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-    transform: translateY(0);
-}
-
-.activityinstance > a > .instancename {
-    color: white;
-    border-bottom: 1px solid #acacab !important;
-    margin: 0;
-    padding: 0;
 }
