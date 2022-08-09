@@ -81,6 +81,11 @@ h1, h2, h3, h4, h5 {
 
 /* Activity */
 
+.instancename {
+    border-bottom: 1px solid #acacab !important;
+    margin: 1em;
+    padding: .1em;
+}
 div.activity-wrapper {
     padding-left: 1.5% !important;
     border-left: 1px solid #CCC !important;
