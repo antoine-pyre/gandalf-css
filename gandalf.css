@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5 {
     color: #0272bc;
 }
 
+@media(max-width: 979px) {
+    .page-header-margin.header-style1 #page {
+        margin-top: 0;
+    }
+}
+
 /*
  * My Competency page CSS
  */
@@ -46,6 +52,22 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
 }
 
+/*
+ * Home Page CSS
+ */
+
+.section li.modtype_forum div.activity-wrapper {
+    -webkit-box-shadow: -3px 0 0 0 #980399;
+    padding: 10px;
+    border: 1px solid #980399 !important;
+    border-radius: 10px;
+}
+.section li.modtype_assign div.activity-wrapper {
+    -webkit-box-shadow: -3px 0 0 0 #0272bc;
+    padding: 10px;
+    border: 1px solid #0272bc !important;
+    border-radius: 10px;
+}
 
 /*
  * Course CSS
@@ -67,4 +89,21 @@ div.activity-wrapper {
 .activity img.iconlarge {
     height: 30px;
     width: 30px;
+}
+
+.ishidden .badge-info {
+    color: #000;
+    background-color: #ffc108;
+    border-bottom: 1px solid #ffc108 !important;
+    border-radius: 10px;
+}
+.isrestricted .badge-info {
+    color: #FFF;
+    background-color: var(--restricted-color);
+    border-bottom: 1px solid var(--restricted-color) !important;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.isrestricted strong {
+    border-bottom: 1px solid var(--restricted-color) !important;
 }
